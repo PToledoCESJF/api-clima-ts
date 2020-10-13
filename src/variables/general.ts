@@ -18,9 +18,9 @@ export const server = [
   'Sign contract for "What are conference organizers afraid of?"'
 ];
 
-// module.exports = {
-//   // these 3 are used to create the tasks lists in TasksCard - Dashboard view
-//   bugs,
-//   website,
-//   server
-// };
+module.exports = {
+  // these 3 are used to create the tasks lists in TasksCard - Dashboard view
+  bugs,
+  website,
+  server
+};
