@@ -129,7 +129,7 @@ class Dashboard extends React.Component<Props, State> {
   }
 
   handleChangeApi(city: string) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.state.key}&lang=pt&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.state.key}&lang=pt&units=metric`;
     fetch(url)
       .then((response) => response.json())
       .then((response: APIResponse) => {
@@ -150,7 +150,7 @@ class Dashboard extends React.Component<Props, State> {
   }
 
   handleChangeApiForecast(city: string) {
-    const urlForecast = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${this.state.key}&lang=pt&units=metric`;
+    const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${this.state.key}&lang=pt&units=metric`;
     fetch(urlForecast)
       .then((response) => response.json())
       .then((response: APIForecastResponse) => {
